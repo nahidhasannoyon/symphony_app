@@ -8,9 +8,9 @@ void main() {
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Your App Title',
+      title: 'Symphony App',
       initialBinding: ApplicationBindings(),
-      initialRoute: AppPages.INITIAL,
+      initialRoute: AppPages.initial,
       getPages: AppPages.routes,
     ),
   );
