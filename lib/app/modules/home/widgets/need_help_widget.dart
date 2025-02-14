@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
 
 class NeedHelpWidget extends StatelessWidget {
@@ -12,41 +13,41 @@ class NeedHelpWidget extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
         color: Colors.redAccent,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20.r),
       ),
-      height: 128,
+      height: 128.h,
       width: double.infinity,
       padding: const EdgeInsets.all(20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Icon(
+          Icon(
             Icons.headset_mic_outlined,
             color: Colors.white,
-            size: 40,
+            size: 40.h,
           ),
-          const CusTextWid(
+          CusTextWid(
             text: 'Need Help?',
-            fontSize: 16,
+            fontSize: 16.sp,
             fontWeight: FontWeight.w600,
             color: Colors.white,
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 10,
-                vertical: 5,
+              padding: EdgeInsets.symmetric(
+                horizontal: 10.w,
+                vertical: 5.h,
               ),
-              shape: const RoundedRectangleBorder(
+              shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(
-                  Radius.circular(10),
+                  Radius.circular(10.r),
                 ),
               ),
             ),
             onPressed: () {},
-            child: const CusTextWid(
+            child: CusTextWid(
               text: 'Check Support',
-              fontSize: 16,
+              fontSize: 16.sp,
               fontWeight: FontWeight.w500,
             ),
           ),

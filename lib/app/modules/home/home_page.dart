@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:symphony_app/app/modules/home/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/modules/home/widgets/e_warranty_card_widget.dart';
@@ -19,49 +20,49 @@ class HomePage extends GetView<HomeController> {
         backgroundColor: const Color(0xFFF1F7FF),
         body: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+            padding: EdgeInsets.only(left: 20.w, right: 20.w, bottom: 20.h),
             child: Column(
               children: [
                 const AppBarWidget(),
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: const Image(
+                  borderRadius: BorderRadius.circular(20.r),
+                  child: Image(
                     width: double.infinity,
                     fit: BoxFit.cover,
-                    height: 160,
-                    image: AssetImage('assets/images/image1.png'),
+                    height: 160.h,
+                    image: const AssetImage('assets/images/image1.png'),
                   ),
                 ),
-                const SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 const NeedHelpWidget(),
-                const SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 const TrendingItemsWidget(),
-                const SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 const EntertainmentWidget(),
-                const SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 const EWarrantyCardWidget(),
-                const SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 const GamesWidget(),
-                const SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 SizedBox(
-                  height: 128,
+                  height: 128.h,
                   width: double.infinity,
                   child: Stack(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(20.r),
                         child: const Image(
                           width: double.infinity,
                           fit: BoxFit.cover,
                           image: AssetImage('assets/images/image4.jpg'),
                         ),
                       ),
-                      const Center(
+                      Center(
                         child: Text(
                           'JOIN SOCIAL COMMUNITY',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20,
+                            fontSize: 20.sp,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -69,7 +70,7 @@ class HomePage extends GetView<HomeController> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 50),
+                SizedBox(height: 50.h),
               ],
             ),
           ),

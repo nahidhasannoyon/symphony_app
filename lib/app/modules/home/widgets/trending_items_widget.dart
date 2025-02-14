@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
 
 class TrendingItemsWidget extends StatelessWidget {
@@ -12,43 +13,43 @@ class TrendingItemsWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const CusTextWid(
+        CusTextWid(
           text: 'Trending items',
-          fontSize: 16,
+          fontSize: 16.sp,
           fontWeight: FontWeight.w700,
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10.h),
         SizedBox(
-          height: 126,
+          height: 126.h,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: 5,
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.only(right: 10),
+                padding: EdgeInsets.only(right: 10.w),
                 child: Container(
-                  width: 100,
-                  height: 125,
+                  width: 100.w,
+                  height: 125.h,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(10.r),
                   ),
-                  child: const Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Center(
                         child: CusTextWid(
                           text: 'Name',
-                          fontSize: 16,
+                          fontSize: 16.sp,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: 10.h),
                       SizedBox(
-                        width: 100,
-                        height: 80,
-                        child: Image(
+                        width: 100.w,
+                        height: 80.h,
+                        child: const Image(
                           fit: BoxFit.scaleDown,
                           image: AssetImage(
                             'assets/images/image2.png',

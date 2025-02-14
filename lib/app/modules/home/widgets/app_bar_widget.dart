@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
 
 class AppBarWidget extends StatelessWidget {
@@ -14,9 +15,9 @@ class AppBarWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const CusTextWid(
+          CusTextWid(
             text: 'My Symphony',
-            fontSize: 18,
+            fontSize: 18.sp,
             fontWeight: FontWeight.w700,
           ),
           IconButton(

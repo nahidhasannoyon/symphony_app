@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
 
 class GamesWidget extends StatelessWidget {
@@ -12,23 +13,23 @@ class GamesWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             CusTextWid(
               text: 'Games',
-              fontSize: 16,
+              fontSize: 16.sp,
               fontWeight: FontWeight.w700,
             ),
             Row(
               children: [
                 CusTextWid(
                   text: 'See More',
-                  fontSize: 14,
+                  fontSize: 14.sp,
                   color: Colors.red,
                   fontWeight: FontWeight.w700,
                 ),
-                Icon(
+                const Icon(
                   Icons.arrow_forward_ios_rounded,
                   color: Colors.red,
                 ),
@@ -36,22 +37,22 @@ class GamesWidget extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10.h),
         SizedBox(
-          height: 126,
+          height: 126.h,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: 5,
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.only(right: 10),
+                padding: EdgeInsets.only(right: 10.w),
                 child: Container(
-                  width: 100,
-                  height: 125,
+                  width: 100.w,
+                  height: 125.h,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(10.r),
                   ),
                   child: const Image(
                     fit: BoxFit.scaleDown,
