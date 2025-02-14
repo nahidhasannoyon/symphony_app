@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
 import 'package:symphony_app/app/modules/home/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/modules/home/widgets/e_warranty_card_widget.dart';
 import 'package:symphony_app/app/modules/home/widgets/entertainment_widget.dart';
@@ -75,6 +76,7 @@ class HomePage extends GetView<HomeController> {
             ),
           ),
         ),
+        bottomNavigationBar: const BottomNavBarWidget(),
       ),
     );
   }
