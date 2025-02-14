@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
+import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
-class GamesWidget extends StatelessWidget {
-  const GamesWidget({
+class GamesWid extends StatelessWidget {
+  const GamesWid({
     super.key,
   });
 
@@ -16,14 +16,14 @@ class GamesWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            CusTextWid(
+            CustomTextWidget(
               text: 'Games',
               fontSize: 16.sp,
               fontWeight: FontWeight.w700,
             ),
             Row(
               children: [
-                CusTextWid(
+                CustomTextWidget(
                   text: 'See More',
                   fontSize: 14.sp,
                   color: Colors.red,

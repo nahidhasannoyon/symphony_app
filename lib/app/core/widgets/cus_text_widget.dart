@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CusTextWid extends StatelessWidget {
+class CustomTextWidget extends StatelessWidget {
   final String text;
   final double fontSize;
   final Color color;
   final String fontFamily;
   final FontWeight fontWeight;
 
-  const CusTextWid({
+  const CustomTextWidget({
     super.key,
     required this.text,
     this.fontSize = 16,

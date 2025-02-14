@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
+import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
-class EWarrantyCardWidget extends StatelessWidget {
-  const EWarrantyCardWidget({
+class EWarrantyCardWid extends StatelessWidget {
+  const EWarrantyCardWid({
     super.key,
   });
 
@@ -13,7 +13,7 @@ class EWarrantyCardWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        CusTextWid(
+        CustomTextWidget(
           text: 'E-warranty card',
           fontSize: 16.sp,
           fontWeight: FontWeight.w700,
@@ -45,20 +45,20 @@ class EWarrantyCardWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      CusTextWid(
+                      CustomTextWidget(
                         text: 'Helio 50',
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
                       SizedBox(height: 6.h),
-                      CusTextWid(
+                      CustomTextWidget(
                         text: 'Valid for 406 Days',
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
                       ),
-                      CusTextWid(
+                      CustomTextWidget(
                         text: 'Expiry Date: December 10, 2024',
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,

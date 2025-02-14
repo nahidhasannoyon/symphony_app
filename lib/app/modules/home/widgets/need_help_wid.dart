@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
+import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
-class NeedHelpWidget extends StatelessWidget {
-  const NeedHelpWidget({
+class NeedHelpWid extends StatelessWidget {
+  const NeedHelpWid({
     super.key,
   });
 
@@ -26,7 +26,7 @@ class NeedHelpWidget extends StatelessWidget {
             color: Colors.white,
             size: 40.h,
           ),
-          CusTextWid(
+          CustomTextWidget(
             text: 'Need Help?',
             fontSize: 16.sp,
             fontWeight: FontWeight.w600,
@@ -45,7 +45,7 @@ class NeedHelpWidget extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: CusTextWid(
+            child: CustomTextWidget(
               text: 'Check Support',
               fontSize: 16.sp,
               fontWeight: FontWeight.w500,

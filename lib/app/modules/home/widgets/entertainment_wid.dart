@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
+import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
-class EntertainmentWidget extends StatelessWidget {
-  const EntertainmentWidget({
+class EntertainmentWid extends StatelessWidget {
+  const EntertainmentWid({
     super.key,
   });
 
@@ -13,7 +13,7 @@ class EntertainmentWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        CusTextWid(
+        CustomTextWidget(
           text: 'Entertainment',
           fontSize: 16.sp,
           fontWeight: FontWeight.w700,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:symphony_app/app/core/widgets/cus_text_wid.dart';
+import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
-class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({
+class AppBarWid extends StatelessWidget {
+  const AppBarWid({
     super.key,
   });
 
@@ -15,7 +15,7 @@ class AppBarWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          CusTextWid(
+          CustomTextWidget(
             text: 'My Symphony',
             fontSize: 18.sp,
             fontWeight: FontWeight.w700,
