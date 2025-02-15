@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
+import 'package:symphony_app/app/routes/check_support_routes.dart';
 
 class NeedHelpWid extends StatelessWidget {
   const NeedHelpWid({
@@ -44,7 +46,9 @@ class NeedHelpWid extends StatelessWidget {
                 ),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(CheckSupportRoutes.checkSupport);
+            },
             child: CustomTextWidget(
               text: 'Check Support',
               fontSize: 16.sp,
