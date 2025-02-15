@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class PoweredByWid extends StatelessWidget {
@@ -40,7 +41,7 @@ class PoweredByWid extends StatelessWidget {
           ),
           const Spacer(),
           Image(
-            image: const AssetImage('assets/images/image 49.png'),
+            image: const AssetImage(Asset.imagesAndroid),
             height: 46.h,
             width: 80.w,
           ),

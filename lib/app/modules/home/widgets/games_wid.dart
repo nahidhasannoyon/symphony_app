@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class GamesWid extends StatelessWidget {
@@ -57,7 +58,7 @@ class GamesWid extends StatelessWidget {
                   child: const Image(
                     fit: BoxFit.scaleDown,
                     image: AssetImage(
-                      'assets/images/image2.png',
+                      Asset.imagesPhone,
                     ),
                   ),
                 ),

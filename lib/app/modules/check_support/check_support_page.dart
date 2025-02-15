@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
-import 'package:symphony_app/app/modules/check_support/widgets/app_bar_wid.dart';
+import 'package:symphony_app/app/routes/lso_query_routes.dart';
 import 'package:symphony_app/app/routes/service_center_routes.dart';
+import 'package:symphony_app/app/routes/specification_routes.dart';
 
 import 'check_support_controller.dart';
 
@@ -17,11 +20,14 @@ class CheckSupportPage extends GetView<CheckSupportController> {
       child: Scaffold(
         backgroundColor: const Color(0xFFF1F7FF),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
+          padding: EdgeInsets.only(left: 20.w, right: 20.w, bottom: 20.h),
           child: Column(
             children: [
-              const AppBarWid(),
-              SizedBox(height: 20.h),
+              SizedBox(height: 10.h),
+              const AppBarWidget(
+                title: 'Check Support',
+              ),
+              SizedBox(height: 10.h),
               Expanded(
                 child: GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -34,8 +40,9 @@ class CheckSupportPage extends GetView<CheckSupportController> {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
+                        // Get.toNamed(ServiceCenterRoutes.serviceCenter);
                         // Get.toNamed(LsoQueryRoutes.lsoQuery);
-                        Get.toNamed(ServiceCenterRoutes.serviceCenter);
+                        Get.toNamed(SpecificationRoutes.specification);
                       },
                       child: Container(
                         padding: EdgeInsets.all(15.w),
@@ -53,9 +60,7 @@ class CheckSupportPage extends GetView<CheckSupportController> {
                           children: [
                             Image(
                               fit: BoxFit.contain,
-                              image: const AssetImage(
-                                'assets/images/image5.png',
-                              ),
+                              image: const AssetImage(Asset.imagesCall),
                               height: 40.h,
                               width: 40.w,
                             ),

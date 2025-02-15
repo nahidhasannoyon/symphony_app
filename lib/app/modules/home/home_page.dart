@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
-import 'package:symphony_app/app/modules/home/widgets/app_bar_wid.dart';
 import 'package:symphony_app/app/modules/home/widgets/e_warranty_card_wid.dart';
 import 'package:symphony_app/app/modules/home/widgets/entertainment_wid.dart';
 import 'package:symphony_app/app/modules/home/widgets/games_wid.dart';
@@ -24,14 +25,22 @@ class HomePage extends GetView<HomeController> {
             padding: EdgeInsets.only(left: 20.w, right: 20.w, bottom: 20.h),
             child: Column(
               children: [
-                const AppBarWid(),
+                AppBarWidget(
+                  willPop: false,
+                  title: 'My Symphony',
+                  action: IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.menu_rounded),
+                  ),
+                ),
+                // const AppBarWid(),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20.r),
                   child: Image(
                     width: double.infinity,
                     fit: BoxFit.cover,
                     height: 160.h,
-                    image: const AssetImage('assets/images/image1.png'),
+                    image: const AssetImage(Asset.imagesBanner),
                   ),
                 ),
                 SizedBox(height: 20.h),
@@ -55,7 +64,7 @@ class HomePage extends GetView<HomeController> {
                         child: const Image(
                           width: double.infinity,
                           fit: BoxFit.cover,
-                          image: AssetImage('assets/images/image4.jpg'),
+                          image: AssetImage(Asset.imagesDots),
                         ),
                       ),
                       Center(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class EntertainmentWid extends StatelessWidget {
@@ -22,7 +23,7 @@ class EntertainmentWid extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(20.r),
           child: const Image(
-            image: AssetImage('assets/images/image3.png'),
+            image: AssetImage(Asset.imagesPoster),
           ),
         ),
       ],

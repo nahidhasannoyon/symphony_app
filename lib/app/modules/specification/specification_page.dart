@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
-import 'package:symphony_app/app/modules/specification/widgets/app_bar_wid.dart';
 import 'package:symphony_app/app/modules/specification/widgets/battery_wid.dart';
 import 'package:symphony_app/app/modules/specification/widgets/camera_wid.dart';
 import 'package:symphony_app/app/modules/specification/widgets/device_sensors_wid.dart';
@@ -29,7 +29,7 @@ class SpecificationPage extends GetView<SpecificationController> {
             padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
             child: Column(
               children: [
-                const AppBarWid(),
+                const AppBarWidget(title: 'Specification'),
                 SizedBox(height: 20.h),
                 /* ------------------------------- Powered By ------------------------------- */
                 const PoweredByWid(),

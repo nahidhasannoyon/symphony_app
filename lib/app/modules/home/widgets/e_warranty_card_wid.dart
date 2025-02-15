@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class EWarrantyCardWid extends StatelessWidget {
@@ -35,9 +36,7 @@ class EWarrantyCardWid extends StatelessWidget {
                   height: 80.h,
                   width: 60.w,
                   fit: BoxFit.contain,
-                  image: const AssetImage(
-                    'assets/images/image2.png',
-                  ),
+                  image: const AssetImage(Asset.imagesPhone),
                 ),
                 SizedBox(width: 10.w),
                 Expanded(

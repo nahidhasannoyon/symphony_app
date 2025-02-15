@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
-import 'package:symphony_app/app/modules/lso_query/widgets/app_bar_wid.dart';
 
 import 'lso_query_controller.dart';
 
@@ -16,11 +16,11 @@ class LsoQueryPage extends GetView<LsoQueryController> {
       child: Scaffold(
         backgroundColor: const Color(0xFFF1F7FF),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
           child: Column(
             children: [
-              const AppBarWid(),
-              SizedBox(height: 20.h),
+              const AppBarWidget(title: 'LSO Query'),
+              SizedBox(height: 10.h),
               Container(
                 padding: EdgeInsets.all(16.w),
                 decoration: BoxDecoration(

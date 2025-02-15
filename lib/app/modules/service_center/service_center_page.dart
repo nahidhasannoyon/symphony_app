@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
-import 'package:symphony_app/app/modules/service_center/widgets/app_bar_wid.dart';
 import 'package:symphony_app/app/modules/service_center/widgets/map_wid.dart';
 
 import 'service_center_controller.dart';
@@ -23,10 +23,12 @@ class ServiceCenterPage extends GetView<ServiceCenterController> {
           child: Stack(
             children: [
               Positioned(
-                top: 20.h,
+                top: 10.h,
                 left: 10.w,
                 right: 10.w,
-                child: const AppBarWid(),
+                child: const AppBarWidget(
+                  title: 'Service Center',
+                ),
               ),
               Positioned(
                 top: kToolbarHeight + 20.h,

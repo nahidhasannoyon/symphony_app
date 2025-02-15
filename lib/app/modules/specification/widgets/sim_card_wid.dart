@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class SimCardWid extends StatelessWidget {
@@ -22,7 +23,7 @@ class SimCardWid extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image(
-            image: const AssetImage('assets/images/image5.png'),
+            image: const AssetImage(Asset.imagesCall),
             height: 32.r,
             width: 32.r,
             fit: BoxFit.cover,
