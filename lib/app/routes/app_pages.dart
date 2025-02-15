@@ -1,4 +1,6 @@
 import 'home_routes.dart';
+import 'check_support_routes.dart';
+import 'lso_query_routes.dart';
 
 class AppPages {
   AppPages._();
@@ -7,5 +9,7 @@ class AppPages {
 
   static final routes = [
     ...HomeRoutes.routes,
+		...CheckSupportRoutes.routes,
+		...LsoQueryRoutes.routes,
   ];
 }
