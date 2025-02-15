@@ -19,7 +19,6 @@ class AppBarWid extends StatelessWidget {
             color: Colors.red,
           ),
           onPressed: () {
-            // Add your back navigation logic here.
             Get.back();
           },
         ),
