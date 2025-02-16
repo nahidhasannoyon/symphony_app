@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class PoweredByWid extends StatelessWidget {
@@ -14,7 +15,7 @@ class PoweredByWid extends StatelessWidget {
       height: 82.h,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColor.cardBgW,
         borderRadius: BorderRadius.circular(10.r),
       ),
       child: Row(
@@ -29,6 +30,7 @@ class PoweredByWid extends StatelessWidget {
                 CustomTextWidget(
                   text: 'Powered by',
                   fontSize: 12.sp,
+                  color: AppColor.bodyText,
                   fontWeight: FontWeight.w500,
                 ),
                 CustomTextWidget(

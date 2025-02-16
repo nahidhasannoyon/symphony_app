@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
+import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
+import 'package:symphony_app/app/routes/home_routes.dart';
 
 class BottomNavBarWidget extends StatelessWidget {
   const BottomNavBarWidget({
@@ -15,46 +19,93 @@ class BottomNavBarWidget extends StatelessWidget {
       ),
       child: Container(
         height: 96.h,
-        decoration: const BoxDecoration(
-          color: Colors.white,
+        decoration: BoxDecoration(
+          border: Border(
+            top: BorderSide(
+              color: AppColor.navBarBorder,
+              width: 2,
+            ),
+          ),
+          color: AppColor.navBarBg,
           boxShadow: [
             BoxShadow(
-              color: Colors.black12,
-              blurRadius: 1,
-              offset: Offset(0, 10),
+              color: AppColor.navBarShadow,
+              blurRadius: 15,
+              spreadRadius: 0,
+              offset: const Offset(0, -6),
             ),
           ],
         ),
-        child: BottomNavigationBar(
-          backgroundColor: Colors.white,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.public,
-                size: 24.w,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            GestureDetector(
+              onTap: () {
+                // Navigation logic for Website
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.public,
+                    size: 24.w,
+                    color: AppColor.navBarIconG,
+                  ),
+                  const SizedBox(height: 4),
+                  CustomTextWidget(
+                    text: 'Website',
+                    color: AppColor.navBarTextG,
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ],
               ),
-              label: 'Website',
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                size: 24.w,
-                color: Colors.red,
+            GestureDetector(
+              onTap: () {
+                Get.offAllNamed(HomeRoutes.home);
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.home,
+                    size: 24.w,
+                    color: AppColor.navBarIconR,
+                  ),
+                  const SizedBox(height: 4),
+                  CustomTextWidget(
+                    text: 'Home',
+                    color: AppColor.navBarTextR,
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ],
               ),
-              label: 'Home',
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.people,
-                size: 24.w,
+            GestureDetector(
+              onTap: () {
+                // Navigation logic for Social
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.people,
+                    size: 24.w,
+                    color: AppColor.navBarIconG,
+                  ),
+                  const SizedBox(height: 4),
+                  CustomTextWidget(
+                    text: 'Social',
+                    color: AppColor.navBarTextG,
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ],
               ),
-              label: 'Social',
             ),
           ],
-          currentIndex: 1,
-          onTap: (index) {
-            // Add your navigation logic here.
-          },
         ),
       ),
     );

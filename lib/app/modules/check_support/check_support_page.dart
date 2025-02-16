@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
-import 'package:symphony_app/app/routes/lso_query_routes.dart';
-import 'package:symphony_app/app/routes/service_center_routes.dart';
 import 'package:symphony_app/app/routes/specification_routes.dart';
 
 import 'check_support_controller.dart';
@@ -18,7 +17,7 @@ class CheckSupportPage extends GetView<CheckSupportController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color(0xFFF1F7FF),
+        backgroundColor: AppColor.bodyBg,
         body: Padding(
           padding: EdgeInsets.only(left: 20.w, right: 20.w, bottom: 20.h),
           child: Column(
@@ -47,11 +46,11 @@ class CheckSupportPage extends GetView<CheckSupportController> {
                       child: Container(
                         padding: EdgeInsets.all(15.w),
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: AppColor.cardBgW,
                           borderRadius: BorderRadius.circular(20.r),
                           border: Border.all(
                             width: 1,
-                            color: const Color.fromARGB(62, 70, 112, 252),
+                            color: AppColor.cardBorder,
                           ),
                         ),
                         child: Column(
@@ -69,7 +68,7 @@ class CheckSupportPage extends GetView<CheckSupportController> {
                               text: 'Book An Appointment',
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w500,
-                              color: Colors.black,
+                              color: AppColor.subHeadingTextB,
                             ),
                           ],
                         ),

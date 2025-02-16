@@ -55,7 +55,7 @@ class NeedHelpWid extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.symmetric(
                 horizontal: 16.w,
-                vertical: 8.h,
+                vertical: 10.h,
               ),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(

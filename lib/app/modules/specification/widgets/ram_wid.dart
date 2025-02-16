@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class RamWid extends StatelessWidget {
@@ -16,7 +17,7 @@ class RamWid extends StatelessWidget {
       height: 148.h,
       width: Get.width / 2 - 30.w,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColor.cardBgW,
         borderRadius: BorderRadius.circular(10.r),
       ),
       child: Column(
@@ -35,12 +36,13 @@ class RamWid extends StatelessWidget {
                 text: 'RAM',
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w500,
-                color: Colors.grey,
+                color: AppColor.mutedTextB,
               ),
+              SizedBox(width: 5.w),
               Icon(
                 Icons.arrow_forward_ios_outlined,
                 size: 12.r,
-                color: Colors.red,
+                color: AppColor.iconR,
               ),
             ],
           ),
@@ -49,6 +51,7 @@ class RamWid extends StatelessWidget {
             text: '16GB (8GB Expandable RAM)',
             fontSize: 14.sp,
             fontWeight: FontWeight.w500,
+            color: AppColor.subHeadingTextB,
           ),
         ],
       ),
