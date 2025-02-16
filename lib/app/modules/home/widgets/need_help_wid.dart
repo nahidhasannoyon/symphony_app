@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 import 'package:symphony_app/app/routes/check_support_routes.dart';
 
@@ -14,8 +16,23 @@ class NeedHelpWid extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
-        color: Colors.redAccent,
         borderRadius: BorderRadius.circular(20.r),
+        image: const DecorationImage(
+          image: AssetImage(Asset.imagesPATTERN),
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(
+            Color(0xFFFF2C2C),
+            BlendMode.dstATop,
+          ),
+        ),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            AppColor.cardBgRThick,
+            AppColor.cardBgRThin,
+          ],
+        ),
       ),
       height: 128.h,
       width: double.infinity,
@@ -25,20 +42,20 @@ class NeedHelpWid extends StatelessWidget {
         children: [
           Icon(
             Icons.headset_mic_outlined,
-            color: Colors.white,
+            color: AppColor.iconW,
             size: 40.h,
           ),
           CustomTextWidget(
             text: 'Need Help?',
             fontSize: 16.sp,
             fontWeight: FontWeight.w600,
-            color: Colors.white,
+            color: AppColor.subHeadingTextW,
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.symmetric(
-                horizontal: 10.w,
-                vertical: 5.h,
+                horizontal: 16.w,
+                vertical: 8.h,
               ),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(
@@ -51,6 +68,7 @@ class NeedHelpWid extends StatelessWidget {
             },
             child: CustomTextWidget(
               text: 'Check Support',
+              color: AppColor.buttonTextB,
               fontSize: 16.sp,
               fontWeight: FontWeight.w500,
             ),

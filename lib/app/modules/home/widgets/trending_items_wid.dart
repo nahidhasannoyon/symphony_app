@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class TrendingItemsWid extends StatelessWidget {
@@ -16,6 +17,7 @@ class TrendingItemsWid extends StatelessWidget {
       children: [
         CustomTextWidget(
           text: 'Trending items',
+          color: AppColor.headingText,
           fontSize: 16.sp,
           fontWeight: FontWeight.w700,
         ),
@@ -38,11 +40,13 @@ class TrendingItemsWid extends StatelessWidget {
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Center(
                         child: CustomTextWidget(
                           text: 'Name',
                           fontSize: 16.sp,
+                          color: AppColor.subHeadingTextB,
                           fontWeight: FontWeight.w600,
                         ),
                       ),

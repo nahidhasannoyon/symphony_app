@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class GamesWid extends StatelessWidget {
@@ -19,6 +20,7 @@ class GamesWid extends StatelessWidget {
           children: [
             CustomTextWidget(
               text: 'Games',
+              color: AppColor.headingText,
               fontSize: 16.sp,
               fontWeight: FontWeight.w700,
             ),
@@ -27,12 +29,12 @@ class GamesWid extends StatelessWidget {
                 CustomTextWidget(
                   text: 'See More',
                   fontSize: 14.sp,
-                  color: Colors.red,
+                  color: AppColor.textButtonR,
                   fontWeight: FontWeight.w700,
                 ),
                 const Icon(
                   Icons.arrow_forward_ios_rounded,
-                  color: Colors.red,
+                  color: AppColor.iconR,
                 ),
               ],
             ),
@@ -52,7 +54,7 @@ class GamesWid extends StatelessWidget {
                   width: 100.w,
                   height: 125.h,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: AppColor.cardBgW,
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                   child: const Image(

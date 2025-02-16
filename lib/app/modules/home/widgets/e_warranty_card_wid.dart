@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
 
 class EWarrantyCardWid extends StatelessWidget {
@@ -16,6 +17,7 @@ class EWarrantyCardWid extends StatelessWidget {
       children: [
         CustomTextWidget(
           text: 'E-warranty card',
+          color: AppColor.headingText,
           fontSize: 16.sp,
           fontWeight: FontWeight.w700,
         ),
@@ -23,7 +25,7 @@ class EWarrantyCardWid extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
-            color: Colors.black,
+            color: AppColor.cardBgB,
             borderRadius: BorderRadius.circular(20.r),
           ),
           height: 100.h,
@@ -48,27 +50,27 @@ class EWarrantyCardWid extends StatelessWidget {
                         text: 'Helio 50',
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w700,
-                        color: Colors.white,
+                        color: AppColor.subHeadingTextW,
                       ),
                       SizedBox(height: 6.h),
                       CustomTextWidget(
                         text: 'Valid for 406 Days',
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white,
+                        color: AppColor.mutedText,
                       ),
                       CustomTextWidget(
                         text: 'Expiry Date: December 10, 2024',
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white,
+                        color: AppColor.mutedText,
                       ),
                     ],
                   ),
                 ),
                 const Icon(
                   Icons.arrow_forward_ios_rounded,
-                  color: Colors.red,
+                  color: AppColor.iconR,
                 ),
               ],
             ),

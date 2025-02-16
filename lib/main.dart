@@ -9,7 +9,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
     ScreenUtilInit(
-      designSize: const Size(375, 814),
+      designSize: const Size(375, 771),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {

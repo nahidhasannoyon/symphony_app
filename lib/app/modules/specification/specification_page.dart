@@ -30,7 +30,7 @@ class SpecificationPage extends GetView<SpecificationController> {
             child: Column(
               children: [
                 const AppBarWidget(title: 'Specification'),
-                SizedBox(height: 20.h),
+                SizedBox(height: 10.h),
                 /* ------------------------------- Powered By ------------------------------- */
                 const PoweredByWid(),
                 SizedBox(height: 20.h),
