@@ -44,23 +44,35 @@ class GamesWid extends StatelessWidget {
         SizedBox(
           height: 126.h,
           child: ListView.builder(
+            padding: EdgeInsets.all(10.w),
             scrollDirection: Axis.horizontal,
-            itemCount: 5,
+            itemCount: 3,
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return Padding(
                 padding: EdgeInsets.only(right: 10.w),
-                child: Container(
-                  width: 100.w,
-                  height: 125.h,
-                  decoration: BoxDecoration(
-                    color: AppColor.cardBgW,
-                    borderRadius: BorderRadius.circular(10.r),
-                  ),
-                  child: const Image(
-                    fit: BoxFit.scaleDown,
-                    image: AssetImage(
-                      Asset.imagesPhone,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.r),
+                  child: Container(
+                    width: 100.w,
+                    height: 125.h,
+                    decoration: BoxDecoration(
+                      border: Border.fromBorderSide(
+                        BorderSide(
+                          color: AppColor.navBarShadow,
+                        ),
+                      ),
+                      color: AppColor.cardBgW,
+                      borderRadius: BorderRadius.circular(10.r),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10.r),
+                      child: const Image(
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                          Asset.imagesGamesGame1,
+                        ),
+                      ),
                     ),
                   ),
                 ),

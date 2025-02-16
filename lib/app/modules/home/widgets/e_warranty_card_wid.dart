@@ -38,7 +38,7 @@ class EWarrantyCardWid extends StatelessWidget {
                   height: 80.h,
                   width: 60.w,
                   fit: BoxFit.contain,
-                  image: const AssetImage(Asset.imagesPhone),
+                  image: const AssetImage(Asset.imagesTrendingItemsPhone),
                 ),
                 SizedBox(width: 10.w),
                 Expanded(

@@ -91,7 +91,7 @@ class HomePage extends GetView<HomeController> {
                     ],
                   ),
                 ),
-                SizedBox(height: 50.h),
+                SizedBox(height: 10.h),
               ],
             ),
           ),

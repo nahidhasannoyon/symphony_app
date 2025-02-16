@@ -59,7 +59,8 @@ class CheckSupportPage extends GetView<CheckSupportController> {
                           children: [
                             Image(
                               fit: BoxFit.contain,
-                              image: const AssetImage(Asset.imagesCall),
+                              image: const AssetImage(
+                                  Asset.imagesIconsCheckSupportsHotline),
                               height: 40.h,
                               width: 40.w,
                             ),

@@ -24,7 +24,7 @@ class NetworkWid extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image(
-            image: const AssetImage(Asset.imagesCall),
+            image: const AssetImage(Asset.imagesIconsSpecificationsNetwork),
             height: 32.r,
             width: 32.r,
             fit: BoxFit.cover,

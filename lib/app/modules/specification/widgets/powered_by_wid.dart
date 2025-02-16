@@ -43,7 +43,7 @@ class PoweredByWid extends StatelessWidget {
           ),
           const Spacer(),
           Image(
-            image: const AssetImage(Asset.imagesAndroid),
+            image: const AssetImage(Asset.imagesIconsSpecificationsAndroid),
             height: 46.h,
             width: 80.w,
           ),

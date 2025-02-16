@@ -26,7 +26,7 @@ class TrendingItemsWid extends StatelessWidget {
           height: 126.h,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: 5,
+            itemCount: 3,
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return Padding(
@@ -44,7 +44,7 @@ class TrendingItemsWid extends StatelessWidget {
                     children: [
                       Center(
                         child: CustomTextWidget(
-                          text: 'Name',
+                          text: 'Mobiles',
                           fontSize: 16.sp,
                           color: AppColor.subHeadingTextB,
                           fontWeight: FontWeight.w600,
@@ -56,7 +56,7 @@ class TrendingItemsWid extends StatelessWidget {
                         height: 80.h,
                         child: const Image(
                           fit: BoxFit.scaleDown,
-                          image: AssetImage(Asset.imagesPhone),
+                          image: AssetImage(Asset.imagesTrendingItemsPhone),
                         ),
                       ),
                     ],
