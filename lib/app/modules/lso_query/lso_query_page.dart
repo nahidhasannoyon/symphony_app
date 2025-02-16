@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
@@ -14,7 +15,7 @@ class LsoQueryPage extends GetView<LsoQueryController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color(0xFFF1F7FF),
+        backgroundColor: AppColor.bodyBg,
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
           child: Column(
@@ -25,9 +26,10 @@ class LsoQueryPage extends GetView<LsoQueryController> {
                 padding: EdgeInsets.all(16.w),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: const Color.fromARGB(87, 255, 0, 43),
+                    color: AppColor.cardBorderR,
+                    width: 1.w,
                   ),
-                  color: Colors.white,
+                  color: AppColor.cardBgW,
                   borderRadius: BorderRadius.circular(20.r),
                 ),
                 child: Column(
@@ -37,20 +39,32 @@ class LsoQueryPage extends GetView<LsoQueryController> {
                       text: 'Service Tracking',
                       fontSize: 18.sp,
                       fontWeight: FontWeight.w700,
+                      color: AppColor.headingText,
                     ),
                     SizedBox(height: 16.h),
                     CustomTextWidget(
                       text: 'Enter LSO',
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w500,
+                      color: AppColor.subHeadingTextB,
                     ),
                     SizedBox(height: 8.h),
                     TextField(
                       decoration: InputDecoration(
+                        fillColor: AppColor.inputBg,
+                        filled: true,
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15.r)),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(15.r),
+                          ),
                         ),
                         hintText: 'Enter LSO : eg : PAN-00950100',
+                        hintStyle: TextStyle(
+                          color: AppColor.inputHintText,
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Urbanist',
+                        ),
                       ),
                     ),
                     SizedBox(height: 25.h),
@@ -59,7 +73,7 @@ class LsoQueryPage extends GetView<LsoQueryController> {
                         // TODO: Implement get information functionality
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFFFF002B),
+                        backgroundColor: AppColor.buttonBgR,
                         minimumSize: Size(147.w, 46.h),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.r),
@@ -71,7 +85,7 @@ class LsoQueryPage extends GetView<LsoQueryController> {
                           text: 'Get Information',
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w500,
-                          color: Colors.white,
+                          color: AppColor.buttonTextW,
                         ),
                       ),
                     ),

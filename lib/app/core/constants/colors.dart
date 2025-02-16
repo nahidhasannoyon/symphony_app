@@ -23,11 +23,14 @@ class AppColor {
   AppColor._();
   // the syntax of a color will be followed by: what is the color for + which part of the app it is used (if applicable) + the color name
   static const Color bodyBg = Color(0xFFF1F7FF);
+
+  /* ------------------------------- Card Colors ------------------------------ */
   static const Color cardBgW = Color(0xFFFFFFFF);
   static const Color cardBgB = Color(0xFF1F2022);
   static Color cardBgRThick = const Color(0xFFE22727).withOpacity(0.8);
   static Color cardBgRThin = const Color(0xFFD92525).withOpacity(0);
   static Color cardBorder = const Color(0xFF4671FC).withOpacity(0.2);
+  static Color cardBorderR = const Color(0xFFFF002B).withOpacity(0.2);
 
   /* ------------------------------- Navigation Bar Colors ------------------------------ */
   static Color navBarBg = const Color(0xFFFFFFFF);
@@ -48,8 +51,15 @@ class AppColor {
 
   /* ------------------------------- Button Colors ------------------------------ */
   static const Color buttonBgW = Color(0xFFFFFFFF);
+  static const Color buttonBgR = Color(0xFFFF002B);
   static const Color buttonTextB = Color(0xFF000000);
+  static const Color buttonTextW = Color(0xFFFFFFFF);
   static const Color textButtonR = Color(0xFFFF002B);
+
+  /* --------------------------- Input Field Colors --------------------------- */
+  static Color inputBg = const Color(0xFFE7EBF2).withOpacity(0.2);
+  static const Color inputBorder = Color(0xFFE7EBF2);
+  static Color inputHintText = const Color(0xFF000000).withOpacity(0.5);
 
   /* ------------------------------- Icon Colors ------------------------------ */
   static const Color iconB = Color(0xFF000000);
