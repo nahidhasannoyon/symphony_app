@@ -48,13 +48,17 @@ class AppColor {
   static Color mutedTextW = const Color(0xFFFFFFFF).withOpacity(0.6);
   static Color mutedTextB = const Color(0xFF000000).withOpacity(0.5);
   static const Color bodyText = Color(0xFF1F2022);
+  static const Color bodyTextR = Color(0xFFFF002B);
 
   /* ------------------------------- Button Colors ------------------------------ */
   static const Color buttonBgW = Color(0xFFFFFFFF);
   static const Color buttonBgR = Color(0xFFFF002B);
+  static const Color buttonIconR = Color(0xFFFF002B);
+  static const Color buttonIconW = Color(0xFFFFFFFF);
   static const Color buttonTextB = Color(0xFF000000);
   static const Color buttonTextW = Color(0xFFFFFFFF);
   static const Color textButtonR = Color(0xFFFF002B);
+  static Color outlineButtonBorder = const Color(0xFF000000).withOpacity(0.2);
 
   /* --------------------------- Input Field Colors --------------------------- */
   static Color inputBg = const Color(0xFFE7EBF2).withOpacity(0.2);

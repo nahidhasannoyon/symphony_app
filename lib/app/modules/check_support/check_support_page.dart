@@ -6,8 +6,7 @@ import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
-import 'package:symphony_app/app/routes/lso_query_routes.dart';
-import 'package:symphony_app/app/routes/specification_routes.dart';
+import 'package:symphony_app/app/routes/service_center_routes.dart';
 
 import 'check_support_controller.dart';
 
@@ -40,8 +39,8 @@ class CheckSupportPage extends GetView<CheckSupportController> {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        // Get.toNamed(ServiceCenterRoutes.serviceCenter);
-                        Get.toNamed(LsoQueryRoutes.lsoQuery);
+                        Get.toNamed(ServiceCenterRoutes.serviceCenter);
+                        // Get.toNamed(LsoQueryRoutes.lsoQuery);
                         // Get.toNamed(SpecificationRoutes.specification);
                       },
                       child: Container(
