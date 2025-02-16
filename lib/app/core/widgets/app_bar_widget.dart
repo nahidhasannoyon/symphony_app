@@ -26,7 +26,7 @@ class AppBarWidget extends StatelessWidget {
             IconButton(
               icon: const Icon(
                 Icons.arrow_back_ios,
-                color: Colors.red,
+                color: AppColor.iconR,
               ),
               onPressed: () {
                 if (willPop!) {

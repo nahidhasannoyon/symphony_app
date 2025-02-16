@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:symphony_app/app/core/constants/colors.dart';
 
 class CustomTextWidget extends StatelessWidget {
   final String text;
@@ -11,7 +12,7 @@ class CustomTextWidget extends StatelessWidget {
     super.key,
     required this.text,
     this.fontSize = 16,
-    this.color = Colors.black,
+    this.color = AppColor.bodyText,
     this.fontFamily = 'Urbanist',
     this.fontWeight = FontWeight.w700,
   });

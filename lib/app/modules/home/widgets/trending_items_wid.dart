@@ -35,7 +35,7 @@ class TrendingItemsWid extends StatelessWidget {
                   width: 100.w,
                   height: 125.h,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: AppColor.cardBgW,
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                   child: Column(
