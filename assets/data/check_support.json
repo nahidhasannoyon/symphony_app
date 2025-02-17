@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Hotline",
+    "imageUrl": "assets/images/icons/check_supports/hotline.png",
+    "route": ""
+  },
+  {
+    "title": "Service Center",
+    "imageUrl": "assets/images/icons/check_supports/service-center.png",
+    "route": "/service-center"
+  },
+  {
+    "title": "LSO Query",
+    "imageUrl": "assets/images/icons/check_supports/lso-query.png",
+    "route": "/lso-query"
+  },
+  {
+    "title": "Feedback",
+    "imageUrl": "assets/images/icons/check_supports/feedback.png",
+    "route": ""
+  },
+  {
+    "title": "Specifications",
+    "imageUrl": "assets/images/icons/check_supports/specification.png",
+    "route": "/specification"
+  },
+  {
+    "title": "Book An Appointment",
+    "imageUrl": "assets/images/icons/check_supports/book-appointment.png",
+    "route": ""
+  }
+]

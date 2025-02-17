@@ -8,7 +8,7 @@ class MapWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ServiceCenterController controller = Get.find();
+    ServiceCenterController controller = Get.find<ServiceCenterController>();
     return Obx(() {
       if (controller.currentPosition.value == null) {
         return const Center(child: CircularProgressIndicator());

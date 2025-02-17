@@ -69,9 +69,7 @@ class LsoQueryPage extends GetView<LsoQueryController> {
                     ),
                     SizedBox(height: 25.h),
                     ElevatedButton(
-                      onPressed: () {
-                        // TODO: Implement get information functionality
-                      },
+                      onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColor.buttonBgR,
                         minimumSize: Size(147.w, 46.h),

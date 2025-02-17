@@ -14,7 +14,8 @@ class ServiceCenterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ServiceCenterController controller = Get.put(ServiceCenterController());
+    final ServiceCenterController serviceCenterCtrl =
+        Get.find<ServiceCenterController>();
     return SafeArea(
       child: Scaffold(
         body: NestedScrollView(
@@ -59,8 +60,8 @@ class ServiceCenterPage extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            controller.mapController
-                                .move(controller.currentPosition.value!, 15.0);
+                            serviceCenterCtrl.mapController.move(
+                                serviceCenterCtrl.currentPosition.value!, 15.0);
                           },
                           icon: const Icon(
                             Icons.my_location,
@@ -104,16 +105,16 @@ class ServiceCenterPage extends StatelessWidget {
             ];
           },
           body: Obx(() {
-            if (controller.currentPosition.value == null) {
+            if (serviceCenterCtrl.currentPosition.value == null) {
               return const Center(child: CircularProgressIndicator());
             }
 
             return ListView.builder(
-              itemCount: controller.randomMarkerLocations.length,
+              itemCount: serviceCenterCtrl.randomMarkerLocations.length,
               itemBuilder: (context, index) {
                 return ServiceCenterItem(
-                  marker: controller.randomMarkerLocations[index],
-                  currentPosition: controller.currentPosition.value!,
+                  marker: serviceCenterCtrl.randomMarkerLocations[index],
+                  currentPosition: serviceCenterCtrl.currentPosition.value!,
                   index: index,
                 );
               },
