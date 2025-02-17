@@ -24,7 +24,7 @@ class SimCardWid extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image(
-            image: const AssetImage(Asset.imagesIconsSpecificationsSimcard),
+            image: const AssetImage(Asset.imagesIconsSpecificationsSimCard),
             height: 32.r,
             width: 32.r,
             fit: BoxFit.cover,

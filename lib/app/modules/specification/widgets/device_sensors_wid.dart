@@ -24,7 +24,7 @@ class DeviceSensorsWid extends StatelessWidget {
         children: [
           Image(
             image:
-                const AssetImage(Asset.imagesIconsSpecificationsDeciveSensors),
+                const AssetImage(Asset.imagesIconsSpecificationsDeviceSensors),
             height: 32.r,
             width: 32.r,
             fit: BoxFit.cover,

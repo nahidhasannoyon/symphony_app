@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Mobiles",
+    "imageUrl": "assets/images/trending_items/phone.png"
+  },
+  {
+    "title": "Watches",
+    "imageUrl": "assets/images/trending_items/watch.png"
+  },
+  {
+    "title": "Accessories",
+    "imageUrl": "assets/images/trending_items/cable.png"
+  }
+]

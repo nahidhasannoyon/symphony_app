@@ -2,6 +2,10 @@
 class Asset {
   Asset._();
   
+  /// Assets for dataTrendingItems
+  /// assets/data/trending_items.json
+  static const String dataTrendingItems = "assets/data/trending_items.json";
+
   /// Assets for imagesBanner
   /// assets/images/banner.png
   static const String imagesBanner = "assets/images/banner.png";
@@ -74,9 +78,9 @@ class Asset {
   /// assets/images/icons/specifications/camera.png
   static const String imagesIconsSpecificationsCamera = "assets/images/icons/specifications/camera.png";
 
-  /// Assets for imagesIconsSpecificationsDeciveSensors
-  /// assets/images/icons/specifications/decive-sensors.png
-  static const String imagesIconsSpecificationsDeciveSensors = "assets/images/icons/specifications/decive-sensors.png";
+  /// Assets for imagesIconsSpecificationsDeviceSensors
+  /// assets/images/icons/specifications/device-sensors.png
+  static const String imagesIconsSpecificationsDeviceSensors = "assets/images/icons/specifications/device-sensors.png";
 
   /// Assets for imagesIconsSpecificationsDisplay
   /// assets/images/icons/specifications/display.png
@@ -94,9 +98,9 @@ class Asset {
   /// assets/images/icons/specifications/ram.png
   static const String imagesIconsSpecificationsRam = "assets/images/icons/specifications/ram.png";
 
-  /// Assets for imagesIconsSpecificationsSimcard
-  /// assets/images/icons/specifications/simcard.png
-  static const String imagesIconsSpecificationsSimcard = "assets/images/icons/specifications/simcard.png";
+  /// Assets for imagesIconsSpecificationsSimCard
+  /// assets/images/icons/specifications/sim-card.png
+  static const String imagesIconsSpecificationsSimCard = "assets/images/icons/specifications/sim-card.png";
 
   /// Assets for imagesIconsSpecificationsStorage
   /// assets/images/icons/specifications/storage.png

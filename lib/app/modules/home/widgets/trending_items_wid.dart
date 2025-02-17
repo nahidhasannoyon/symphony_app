@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:get/get.dart';
 import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
+import 'package:symphony_app/app/modules/home/home_controller.dart';
 
 class TrendingItemsWid extends StatelessWidget {
   const TrendingItemsWid({
@@ -11,6 +12,8 @@ class TrendingItemsWid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final HomeController homeCtrl = Get.find();
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -24,44 +27,53 @@ class TrendingItemsWid extends StatelessWidget {
         SizedBox(height: 10.h),
         SizedBox(
           height: 126.h,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: 3,
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: EdgeInsets.only(right: 10.w),
-                child: Container(
-                  width: 100.w,
-                  height: 125.h,
-                  decoration: BoxDecoration(
-                    color: AppColor.cardBgW,
-                    borderRadius: BorderRadius.circular(10.r),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Center(
-                        child: CustomTextWidget(
-                          text: 'Mobiles',
-                          fontSize: 16.sp,
-                          color: AppColor.subHeadingTextB,
-                          fontWeight: FontWeight.w600,
-                        ),
+          child: Obx(
+            () {
+              if (homeCtrl.isLoading.value) {
+                return const Center(child: CircularProgressIndicator());
+              }
+              return ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: homeCtrl.trendingItems.length,
+                shrinkWrap: true,
+                itemBuilder: (context, index) {
+                  final item = homeCtrl.trendingItems[index];
+
+                  return Padding(
+                    padding: EdgeInsets.only(right: 10.w),
+                    child: Container(
+                      width: 100.w,
+                      height: 125.h,
+                      decoration: BoxDecoration(
+                        color: AppColor.cardBgW,
+                        borderRadius: BorderRadius.circular(10.r),
                       ),
-                      SizedBox(height: 10.h),
-                      SizedBox(
-                        width: 100.w,
-                        height: 80.h,
-                        child: const Image(
-                          fit: BoxFit.scaleDown,
-                          image: AssetImage(Asset.imagesTrendingItemsPhone),
-                        ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Center(
+                            child: CustomTextWidget(
+                              text: item.title,
+                              fontSize: 16.sp,
+                              color: AppColor.subHeadingTextB,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(height: 10.h),
+                          SizedBox(
+                            width: 100.w,
+                            height: 80.h,
+                            child: Image(
+                              fit: BoxFit.scaleDown,
+                              image: AssetImage(item.imageUrl),
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                ),
+                    ),
+                  );
+                },
               );
             },
           ),
