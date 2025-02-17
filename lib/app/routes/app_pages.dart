@@ -1,8 +1,4 @@
-import 'home_routes.dart';
-import 'check_support_routes.dart';
-import 'lso_query_routes.dart';
-import 'service_center_routes.dart';
-import 'specification_routes.dart';
+import 'package:symphony_app/imports.dart';
 
 class AppPages {
   AppPages._();

@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:symphony_app/app/core/constants/colors.dart';
+import 'package:symphony_app/imports.dart';
 
 class CustomTextWidget extends StatelessWidget {
   final String text;

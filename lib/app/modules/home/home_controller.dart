@@ -1,9 +1,4 @@
-import 'package:flutter/foundation.dart';
-import 'package:get/get.dart';
-import 'package:symphony_app/app/data/models/game_model.dart';
-import 'package:symphony_app/app/data/models/trending_item_model.dart';
-import 'package:symphony_app/app/data/repositories/games_repository.dart';
-import 'package:symphony_app/app/data/repositories/trending_items_repository.dart';
+import 'package:symphony_app/imports.dart';
 
 class HomeController extends GetxController {
   final GamesRepository _gamesRepository = GamesRepository();

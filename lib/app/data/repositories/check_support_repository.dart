@@ -1,7 +1,4 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'package:symphony_app/app/core/constants/assets.dart';
-import 'package:symphony_app/app/data/models/check_support_item.dart';
+import 'package:symphony_app/imports.dart';
 
 class CheckSupportRepository {
   Future<List<CheckSupportItem>> fetchCheckSupportItems() async {

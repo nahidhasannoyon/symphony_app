@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
-
-import 'home_controller.dart';
+import 'package:symphony_app/imports.dart';
 
 class HomeBinding extends Bindings {
   @override

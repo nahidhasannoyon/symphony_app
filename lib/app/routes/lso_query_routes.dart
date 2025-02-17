@@ -1,7 +1,4 @@
-import 'package:get/get.dart';
-
-import '../modules/lso_query/lso_query_binding.dart';
-import '../modules/lso_query/lso_query_page.dart';
+import 'package:symphony_app/imports.dart';
 
 class LsoQueryRoutes {
   LsoQueryRoutes._();

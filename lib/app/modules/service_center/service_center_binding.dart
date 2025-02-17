@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
-
-import 'service_center_controller.dart';
+import 'package:symphony_app/imports.dart';
 
 class ServiceCenterBinding extends Bindings {
   @override

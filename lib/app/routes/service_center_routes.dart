@@ -1,7 +1,4 @@
-import 'package:get/get.dart';
-
-import '../modules/service_center/service_center_binding.dart';
-import '../modules/service_center/service_center_page.dart';
+import 'package:symphony_app/imports.dart';
 
 class ServiceCenterRoutes {
   ServiceCenterRoutes._();

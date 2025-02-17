@@ -1,3 +1,5 @@
+import 'package:symphony_app/imports.dart';
+
 // import 'package:flutter/material.dart';
 
 // class KColor {
@@ -16,8 +18,8 @@
 //   static const Color whiteIcon = Color(0xFFFFFFFF);
 // }
 
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
+
 
 class AppColor {
   AppColor._();

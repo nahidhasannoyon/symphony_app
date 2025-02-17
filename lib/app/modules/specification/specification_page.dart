@@ -1,21 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:symphony_app/app/core/constants/colors.dart';
-import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
-import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
-import 'package:symphony_app/app/modules/specification/widgets/battery_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/camera_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/device_sensors_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/display_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/network_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/powered_by_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/processor_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/ram_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/sim_card_wid.dart';
-import 'package:symphony_app/app/modules/specification/widgets/storage_wid.dart';
-
-import 'specification_controller.dart';
+import 'package:symphony_app/imports.dart';
 
 class SpecificationPage extends GetView<SpecificationController> {
   const SpecificationPage({super.key});

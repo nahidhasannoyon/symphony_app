@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:latlong2/latlong.dart';
-import 'package:symphony_app/app/core/constants/colors.dart';
-import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
+import 'package:symphony_app/imports.dart';
 
 class ServiceCenterItem extends StatelessWidget {
   final LatLng marker;

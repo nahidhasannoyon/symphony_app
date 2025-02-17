@@ -1,7 +1,4 @@
-import 'package:get/get.dart';
-
-import '../modules/specification/specification_binding.dart';
-import '../modules/specification/specification_page.dart';
+import 'package:symphony_app/imports.dart';
 
 class SpecificationRoutes {
   SpecificationRoutes._();

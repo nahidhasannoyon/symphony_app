@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:get/get.dart';
-import '../service_center_controller.dart';
+import 'package:symphony_app/imports.dart';
 
 class MapWidget extends StatelessWidget {
   const MapWidget({super.key});

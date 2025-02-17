@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
-import 'package:symphony_app/app/data/models/check_support_item.dart';
-import 'package:symphony_app/app/data/repositories/check_support_repository.dart';
+import 'package:symphony_app/imports.dart';
 
 class CheckSupportController extends GetxController {
   final CheckSupportRepository checkSupportRepo = CheckSupportRepository();

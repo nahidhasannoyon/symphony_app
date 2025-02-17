@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:symphony_app/app/core/constants/assets.dart';
-import 'package:symphony_app/app/core/constants/colors.dart';
-import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
+import 'package:symphony_app/imports.dart';
 
 class SimCardWid extends StatelessWidget {
   const SimCardWid({

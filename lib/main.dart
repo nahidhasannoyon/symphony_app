@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-
-import 'app/core/bindings/application_bindings.dart';
-import 'app/routes/app_pages.dart';
+import 'package:symphony_app/imports.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

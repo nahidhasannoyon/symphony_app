@@ -1,17 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:symphony_app/app/core/constants/assets.dart';
-import 'package:symphony_app/app/core/constants/colors.dart';
-import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
-import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
-import 'package:symphony_app/app/modules/home/widgets/e_warranty_card_wid.dart';
-import 'package:symphony_app/app/modules/home/widgets/entertainment_wid.dart';
-import 'package:symphony_app/app/modules/home/widgets/games_wid.dart';
-import 'package:symphony_app/app/modules/home/widgets/need_help_wid.dart';
-import 'package:symphony_app/app/modules/home/widgets/trending_items_wid.dart';
-
-import 'home_controller.dart';
+import 'package:symphony_app/imports.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({super.key});

@@ -1,7 +1,4 @@
-import 'package:get/get.dart';
-
-import '../modules/check_support/check_support_binding.dart';
-import '../modules/check_support/check_support_page.dart';
+import 'package:symphony_app/imports.dart';
 
 class CheckSupportRoutes {
   CheckSupportRoutes._();

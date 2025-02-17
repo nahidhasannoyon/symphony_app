@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:symphony_app/imports.dart';
 
 class ApplicationBindings extends Bindings {
   @override

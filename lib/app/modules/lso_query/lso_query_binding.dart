@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
-
-import 'lso_query_controller.dart';
+import 'package:symphony_app/imports.dart';
 
 class LsoQueryBinding extends Bindings {
   @override

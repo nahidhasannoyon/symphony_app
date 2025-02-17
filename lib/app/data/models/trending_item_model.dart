@@ -1,8 +1,10 @@
+import 'package:symphony_app/imports.dart';
+
 // To parse this JSON data, do
 //
 //     final trendingItem = trendingItemFromJson(jsonString);
 
-import 'dart:convert';
+
 
 List<TrendingItem> trendingItemFromJson(String str) => List<TrendingItem>.from(
     json.decode(str).map((x) => TrendingItem.fromJson(x)));

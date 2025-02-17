@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
-
-import 'specification_controller.dart';
+import 'package:symphony_app/imports.dart';
 
 class SpecificationBinding extends Bindings {
   @override

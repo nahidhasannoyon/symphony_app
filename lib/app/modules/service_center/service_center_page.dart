@@ -1,13 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:symphony_app/app/core/constants/colors.dart';
-import 'package:symphony_app/app/core/widgets/app_bar_widget.dart';
-import 'package:symphony_app/app/core/widgets/bottom_nav_bar_widget.dart';
-import 'package:symphony_app/app/modules/service_center/widgets/header_delegate.dart';
-import 'service_center_controller.dart';
-import 'widgets/map_wid.dart';
-import 'widgets/service_center_item.dart';
+import 'package:symphony_app/imports.dart';
 
 class ServiceCenterPage extends StatelessWidget {
   const ServiceCenterPage({super.key});

@@ -1,3 +1,5 @@
+import 'package:symphony_app/imports.dart';
+
 // ignore_for_file: prefer_single_quotes
 class Asset {
   Asset._();
@@ -134,4 +136,3 @@ class Asset {
   /// assets/images/trending_items/watch.png
   static const String imagesTrendingItemsWatch = "assets/images/trending_items/watch.png";
 }
-
