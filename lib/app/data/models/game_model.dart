@@ -1,4 +1,4 @@
-import 'package:symphony_app/imports.dart';
+import 'package:symphony_app/app/core/constants/imports.dart';
 
 List<GameItem> gameItemFromJson(String str) =>
     List<GameItem>.from(json.decode(str).map((x) => GameItem.fromJson(x)));

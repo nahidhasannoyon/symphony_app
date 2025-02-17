@@ -1,4 +1,4 @@
-import 'package:symphony_app/imports.dart';
+import 'package:symphony_app/app/core/constants/imports.dart';
 
 // ignore_for_file: prefer_single_quotes
 class Asset {

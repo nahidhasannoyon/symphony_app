@@ -1,4 +1,4 @@
-import 'package:symphony_app/imports.dart';
+import 'package:symphony_app/app/core/constants/imports.dart';
 
 class DeviceSensorsWid extends StatelessWidget {
   const DeviceSensorsWid({
