@@ -2,6 +2,10 @@
 class Asset {
   Asset._();
   
+  /// Assets for dataGames
+  /// assets/data/games.json
+  static const String dataGames = "assets/data/games.json";
+
   /// Assets for dataTrendingItems
   /// assets/data/trending_items.json
   static const String dataTrendingItems = "assets/data/trending_items.json";

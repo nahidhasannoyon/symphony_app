@@ -12,7 +12,7 @@ class TrendingItemsWid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final HomeController homeCtrl = Get.find();
+    final HomeController homeCtrl = Get.find<HomeController>();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,15 +29,15 @@ class TrendingItemsWid extends StatelessWidget {
           height: 126.h,
           child: Obx(
             () {
-              if (homeCtrl.isLoading.value) {
+              if (homeCtrl.isLoadingTrending.value) {
                 return const Center(child: CircularProgressIndicator());
               }
               return ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: homeCtrl.trendingItems.length,
+                itemCount: homeCtrl.trendingItemsList.length,
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
-                  final item = homeCtrl.trendingItems[index];
+                  final item = homeCtrl.trendingItemsList[index];
 
                   return Padding(
                     padding: EdgeInsets.only(right: 10.w),

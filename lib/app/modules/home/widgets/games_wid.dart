@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:symphony_app/app/core/constants/assets.dart';
+import 'package:get/get.dart';
 import 'package:symphony_app/app/core/constants/colors.dart';
 import 'package:symphony_app/app/core/widgets/cus_text_widget.dart';
+import 'package:symphony_app/app/modules/home/home_controller.dart';
 
 class GamesWid extends StatelessWidget {
   const GamesWid({
@@ -11,6 +12,7 @@ class GamesWid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final HomeController homeCtrl = Get.find<HomeController>();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -41,45 +43,56 @@ class GamesWid extends StatelessWidget {
           ],
         ),
         SizedBox(height: 10.h),
-        SizedBox(
-          height: 126.h,
-          child: ListView.builder(
-            padding: EdgeInsets.all(10.w),
-            scrollDirection: Axis.horizontal,
-            itemCount: 3,
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: EdgeInsets.only(right: 10.w),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10.r),
-                  child: Container(
-                    width: 100.w,
-                    height: 125.h,
-                    decoration: BoxDecoration(
-                      border: Border.fromBorderSide(
-                        BorderSide(
-                          color: AppColor.navBarShadow,
+        Obx(() {
+          if (homeCtrl.isLoadingGames.value) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          if (homeCtrl.gamesList.isEmpty) {
+            return const Center(child: Text("No Games Available"));
+          }
+
+          return SizedBox(
+            height: 126.h,
+            child: ListView.builder(
+              padding: EdgeInsets.all(10.w),
+              scrollDirection: Axis.horizontal,
+              itemCount: 3,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                final game = homeCtrl.gamesList[index];
+                return Padding(
+                  padding: EdgeInsets.only(right: 10.w),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10.r),
+                    child: Container(
+                      width: 100.w,
+                      height: 125.h,
+                      decoration: BoxDecoration(
+                        border: Border.fromBorderSide(
+                          BorderSide(
+                            color: AppColor.navBarShadow,
+                          ),
                         ),
+                        color: AppColor.cardBgW,
+                        borderRadius: BorderRadius.circular(10.r),
                       ),
-                      color: AppColor.cardBgW,
-                      borderRadius: BorderRadius.circular(10.r),
-                    ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10.r),
-                      child: const Image(
-                        fit: BoxFit.cover,
-                        image: AssetImage(
-                          Asset.imagesGamesGame1,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10.r),
+                        child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage(
+                            game.imageUrl,
+                          ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              );
-            },
-          ),
-        ),
+                );
+              },
+            ),
+          );
+        }),
       ],
     );
   }
